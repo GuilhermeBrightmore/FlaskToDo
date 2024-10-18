@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222222;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.error-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 100px;
+    margin: 0;
+    color: #e74c3c; /* Cor vermelha para indicar erro */
+}
+
+h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db; /* Cor azul para links */
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}

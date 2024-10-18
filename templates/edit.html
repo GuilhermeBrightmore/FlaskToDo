@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Agenda</title>
+</head>
+<body>
+    <form action="" method="post">
+        <h3 id="afazerh3">A Fazer:</h3><br>
+        <input type="text" name="editarnomeitem" id="" value="{{nome_form}}"><br>
+        <h3>Data (dd/mm/aaaa):</h3><br>
+        <input type="text" name="editardataitem" id="dataitem" placeholder="dd/mm/aaaa" required pattern="\d{2}/\d{2}/\d{4}" value="{{data_form}}"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

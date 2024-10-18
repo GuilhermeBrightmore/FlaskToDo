@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Agenda</title>
+</head>
+<body>
+    <form action="" method="post">
+        <h3 id="afazerh3">A Fazer:</h3><br>
+        <input type="text" name="criaritem" id=""><br>
+        <h3>Data (dd/mm/aaaa):</h3><br>
+        <input type="text" name="dataitem" id="dataitem" placeholder="dd/mm/aaaa" required pattern="\d{2}/\d{2}/\d{4}"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <div class="afazeres-container">
+        {% for item in a_fazeres %}
+            <div class="afazer-item">
+                <h1>{{a_fazeres[item]['nome']}}</h1>
+                <h2>{{a_fazeres[item]['data']}}</h2>
+                <a href="/deletar/{{item}}"><input type="submit" value="Deletar"></a>
+                <a href="/editar/{{item}}"><input type="submit" value="Editar"></a>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

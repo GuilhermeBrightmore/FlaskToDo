@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='errorinterno.css') }}">
+    <title>Erro {{erro_status}} - Erro {{erro_name}}</title>
+</head>
+<body>
+    <div class="error-container">
+        <h1>{{erro_status}}</h1>
+        <h2>{{erro_name}}</h2>
+        <p>{{erro_message}}</p>
+        <a href="/">Voltar para a Página Inicial</a>
+    </div>
+</body>
+</html>
